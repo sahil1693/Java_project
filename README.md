@@ -6,9 +6,9 @@ In the Java project you can see two files
 
 In both of these there is a use of basic java and swing and awt.
 
-First file show you basic scientific calculator which can done basic calculation 
+First file show you calculator who done basic calculation and some scientific calculation in java. 
 
-second is notepad which show you a basic notepad with some simple options.
+second is notepad which show you a basic notepad with some basic options.
 
 Compile a Java file
 
@@ -16,5 +16,8 @@ javac calender.java
 
 Run a java file
 
-java Calculator
+java Calculator1
+
+
+
 
