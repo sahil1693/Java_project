@@ -36,20 +36,20 @@ public class notepad extends JFrame{
 			{
 			FileDialog dialog1=new FileDialog(p,"Save As",FileDialog.SAVE);
 			dialog1.setVisible(true);
-			str7=dialog1.getDirectory();
-			str8=dialog1.getFile();
-			str9=str7+str8;
-			str6=t.getText();
-			int len1=str6.length();
-			byte buf[]=str6.getBytes();
-			File f1=new File(str9);
-			FileOutputStream fobj1=new FileOutputStream(f1);
+			str7=dialog1.getDirectory();   //getting directory where file is stored
+			str8=dialog1.getFile();         // Getting file name
+			str9=str7+str8;                   // concatenate directory and filename
+			str6=t.getText();            // getting textarea content
+			int len1=str6.length();          // getting length of textarea
+			byte buf[]=str6.getBytes();        // converting to bytes
+			File f1=new File(str9);            // Making empty file with in the directory where user want to make
+			FileOutputStream fobj1=new FileOutputStream(f1);  //making object of file to write data into it
 			for(int k=0;k<len1;k++)
 			{
-			fobj1.write(buf[k]);
+			fobj1.write(buf[k]);                    // Writing data into file
 			}
-			fobj1.close();
-			setTitle(str8);
+			fobj1.close();            //closing file after write
+			setTitle(str8);           //setting title of notepad given by user
 			}}
 			catch(Exception g){}
 			if(str.equals("Quit"))
