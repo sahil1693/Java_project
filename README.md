@@ -10,11 +10,12 @@ First file show you calculator who done basic calculation and some scientific ca
 
 second is notepad which show you a basic notepad with some basic options.
 
-Compile a Java file
+### To Check to functionality of the program
+##Compile a Java file
 
 javac Cal.java
 
-Run a java file
+##Run a java file
 
 java Calculator1
 
